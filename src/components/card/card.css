@@ -1,39 +1,36 @@
-.card{
+.card {
   cursor: pointer;
-    position: relative;
-    max-width: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    padding: 20px 20px 30px;
-    border: .0625rem solid #f5f5f5;
-    margin: -.0625rem -.03125rem 0;
-    transition: border-color .2s ease-in-out;
+  position: relative;
+  width: 250px;
+  padding: 20px 20px 30px;
+  border: 0.0625rem solid #f5f5f5;
+  transition: border-color 0.2s ease-in-out;
 }
 
-.card:hover{
-  border: 1px solid #ccc;
+.card:hover {
+  border: 0.0625rem solid #ccc;
 }
 
-.card__image{
+.card__image {
   height: 12.5rem;
   width: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.card__title{
+.card__title {
   font-size: 1rem;
   line-height: 1.125rem;
   color: #636363;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
-.card__price{
+.card__price {
   font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.6875rem;
@@ -41,32 +38,33 @@
   padding-bottom: 1rem;
 }
 
-.card__area{
+.card__area {
   display: flex;
   align-items: center;
 }
 
-.card__sotki, .card__square{
+.card__sotki,
+.card__square {
   position: relative;
   margin-right: 20px;
   display: flex;
   align-items: center;
 }
 
-.card__sotki::before{
+.card__sotki::before {
   width: 16px;
   height: 16px;
   margin-right: 10px;
   display: inline-block;
-  content: '';
-  background: url('./img/sotki.svg') no-repeat center / contain;
+  content: "";
+  background: url("./img/sotki.svg") no-repeat center / contain;
 }
 
-.card__square::before{
+.card__square::before {
   width: 16px;
   height: 16px;
   margin-right: 10px;
   display: inline-block;
-  content: '';
-  background: url('./img/house.svg') no-repeat center / contain;
+  content: "";
+  background: url("./img/house.svg") no-repeat center / contain;
 }
