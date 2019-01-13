@@ -4,3 +4,15 @@
   padding-right: 15px;
   margin: 0 auto;
 }
+
+.App {
+  margin: 50px auto;
+}
+
+.App_loading {
+  text-align: center;
+}
+
+.App__pagination {
+  text-align: center;
+}

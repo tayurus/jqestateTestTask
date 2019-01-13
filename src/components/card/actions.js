@@ -1,7 +1,7 @@
 import { cardConstants } from "./constants";
 import { cardsService } from "./services.js";
 
-const getCards = offset => {
+const getCards = (offset, paginationIndex) => {
   return dispatch => {
     dispatch({ type: cardConstants.GET_CARDS_REQUEST });
 
@@ -9,7 +9,13 @@ const getCards = offset => {
       if (typeof res.errors !== "undefined") {
         dispatch({ type: cardConstants.GET_CARDS_FAILURE });
       } else {
-        dispatch({ type: cardConstants.GET_CARDS_SUCCESS, cards: res.items });
+        dispatch({
+          type: cardConstants.GET_CARDS_SUCCESS,
+          cards: res.items,
+          total: res.pagination.total,
+          limit: res.pagination.limit,
+          paginationIndex: paginationIndex
+        });
       }
     });
   };
