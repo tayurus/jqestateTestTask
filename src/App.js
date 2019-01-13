@@ -62,14 +62,15 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-  const { cards, total, limit, loading, paginationIndex } = state;
+  const { cards, total, limit, loading, paginationIndex, error } = state;
 
   return {
     cards,
     total,
     limit,
     loading,
-    paginationIndex
+    paginationIndex,
+    error
   };
 }
 
