@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import { Card } from "./components";
-import { CardsGrid } from "./components";
+import { Card, CardsGrid, Header } from "./components";
 import { Pagination, Preloader } from "react-materialize";
 
 import { connect } from "react-redux";
@@ -39,6 +38,7 @@ class App extends Component {
       const { total, limit, paginationIndex } = this.props;
       return (
         <div className="App">
+          <Header />
           <div className="container">
             <CardsGrid cards={cards} />
             <Pagination
