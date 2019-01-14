@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 import exampleHouse from "./../../images/card/example.jpg";
 import { detectCurrency } from "./../../helpers";
 
-export const Card = ({ title, price, area, sotki, currency }) => {
+export const Card = ({ title, price, area, sotki, currency, badge }) => {
+  console.log(badge);
   return (
     <div className="card">
       <div
@@ -24,7 +25,11 @@ export const Card = ({ title, price, area, sotki, currency }) => {
           {area} м<sup>2</sup>
         </div>
       </div>
-      <div className="card__badge">Рекомендуем</div>
+      {badge && (
+        <div className="card__badge" style={{ backgroundColor: badge.color }}>
+          {badge.title}
+        </div>
+      )}
     </div>
   );
 };

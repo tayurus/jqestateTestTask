@@ -31,6 +31,7 @@ class MainPage extends Component {
         currency: card.saleOffer ? card.saleOffer.currency : "none",
         price: card.saleOffer ? card.saleOffer.price : "none",
         area: card.specification.area,
+        badge: card.badge,
         sotki: (card.specification.area / 100).toFixed(1)
       }));
 
