@@ -8,11 +8,12 @@ import { cardsActions } from "./../../actions";
 class MainPage extends Component {
   constructor(props) {
     super(props);
-    const { dispatch } = this.props;
-
-    dispatch(cardsActions.getCards(0));
-
     this.handlePaginationItemClick = this.handlePaginationItemClick.bind(this);
+  }
+
+  componentDidMount() {
+    const { dispatch } = this.props;
+    dispatch(cardsActions.getCards(0));
   }
 
   handlePaginationItemClick(paginationIndex) {

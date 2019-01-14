@@ -1,6 +1,7 @@
 import React from "react";
 import "./card.css";
 import PropTypes from "prop-types";
+import exampleHouse from "./../../images/card/example.jpg";
 
 export const Card = ({ title, price, area, sotki }) => {
   return (
@@ -8,7 +9,7 @@ export const Card = ({ title, price, area, sotki }) => {
       <div
         className="card__image"
         style={{
-          backgroundImage: "url(https://www.13min.ru/wp-content/uploads/2012/10/Sobstvennyj-dom.jpg)"
+          backgroundImage: "url(" + exampleHouse + ")"
         }}
       />
       <div className="card__title">{title}</div>
