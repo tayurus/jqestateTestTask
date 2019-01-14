@@ -1,4 +1,4 @@
-import { cardConstants } from "./constants.js";
+import { cardConstants } from "./../constants";
 
 const initialState = { cards: [], paginationIndex: 1 };
 export const cardReducer = (state = initialState, action) => {

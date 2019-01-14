@@ -1,0 +1,11 @@
+.main-page {
+  margin: 90px auto;
+}
+
+.main-page_loading {
+  text-align: center;
+}
+
+.main-page__pagination {
+  text-align: center;
+}

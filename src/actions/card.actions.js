@@ -1,5 +1,5 @@
-import { cardConstants } from "./constants";
-import { cardsService } from "./services.js";
+import { cardConstants } from "./../constants";
+import { cardsService } from "./../services";
 
 const getCards = (offset, paginationIndex) => {
   return dispatch => {
