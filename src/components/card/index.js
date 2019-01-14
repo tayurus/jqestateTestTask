@@ -3,7 +3,6 @@ import "./card.css";
 import PropTypes from "prop-types";
 
 export const Card = ({ title, price, area, sotki }) => {
-  // console.log("kind = ", kind);
   return (
     <div className="card">
       <div
@@ -20,6 +19,7 @@ export const Card = ({ title, price, area, sotki }) => {
           {area} м<sup>2</sup>
         </div>
       </div>
+      <div className="card__badge">Рекомендуем</div>
     </div>
   );
 };

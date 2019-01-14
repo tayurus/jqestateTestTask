@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  padding: 1rem 2.875rem;
+  width: auto;
+  color: #fff;
+  border-radius: 6.25rem;
+  border: none;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.button_green {
+  background-color: #00c853;
+}

@@ -39,16 +39,14 @@ class App extends Component {
       return (
         <div className="App">
           <Header />
-          <div className="container">
-            <CardsGrid cards={cards} />
-            <Pagination
-              className="App__pagination"
-              items={parseInt(total / limit) + (total > limit && total % limit ? 1 : 0)}
-              activePage={paginationIndex}
-              onSelect={this.handlePaginationItemClick}
-              maxButtons={8}
-            />
-          </div>
+          <CardsGrid cards={cards} />
+          <Pagination
+            className="App__pagination"
+            items={parseInt(total / limit) + (total > limit && total % limit ? 1 : 0)}
+            activePage={paginationIndex}
+            onSelect={this.handlePaginationItemClick}
+            maxButtons={8}
+          />
         </div>
       );
     }
