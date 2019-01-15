@@ -5,7 +5,6 @@ import exampleHouse from "./../../images/card/example.jpg";
 import { detectCurrency } from "./../../helpers";
 
 export const Card = ({ title, price, area, sotki, currency, badge }) => {
-  console.log(badge);
   return (
     <div className="card">
       <div
