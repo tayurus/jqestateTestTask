@@ -23,5 +23,4 @@ export const cardReducer = (state = initialState, action) => {
     default:
       return state;
   }
-  return state;
 };

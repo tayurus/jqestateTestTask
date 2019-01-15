@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./MainPage.css";
 import { Pagination, Preloader } from "react-materialize";
 import { connect } from "react-redux";
-import { Card, CardsGrid, Header } from "./../../components";
+import { CardsGrid, Header } from "./../../components";
 import { cardsActions } from "./../../actions";
 
 class MainPage extends Component {
