@@ -1,8 +1,7 @@
 import React from "react";
 import "./card.css";
 import PropTypes from "prop-types";
-import exampleHouse from "./../../images/card/example.jpg";
-import { detectCurrency } from "./../../helpers";
+import { detectCurrency, imageWrapper } from "./../../helpers";
 
 export const Card = ({ title, price, area, sotki, currency, badge }) => {
   return (
@@ -10,7 +9,7 @@ export const Card = ({ title, price, area, sotki, currency, badge }) => {
       <div
         className="card__image"
         style={{
-          backgroundImage: "url(" + exampleHouse + ")"
+          backgroundImage: "url(" + imageWrapper() + ")"
         }}
       />
       <div className="card__title">{title}</div>
