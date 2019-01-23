@@ -3,7 +3,9 @@ import "./MainPage.css";
 import { Pagination, Preloader } from "react-materialize";
 import { connect } from "react-redux";
 import { CardsGrid, Header } from "./../../components";
-import { cardsActions } from "./../../actions";
+import { cardConstants } from './../../constants';
+import { cardsActions } from './../../actions';
+
 
 class MainPage extends Component {
   constructor(props) {
@@ -13,7 +15,7 @@ class MainPage extends Component {
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(cardsActions.getCards(0));
+    dispatch(cardsActions.getCards(0,1));
   }
 
   handlePaginationItemClick(paginationIndex) {
